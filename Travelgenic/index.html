@@ -7,8 +7,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <style>
   /* Make the image fully responsive */
   .carousel-inner img {
@@ -18,56 +21,27 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light style="background-color:#4C0822">
-  <a class="navbar-brand" href="#"><i class="fa fa-plane"></i>Travel Genic</a>
+  <a class="navbar-brand animated slideInDown" href="#"><i class="fa fa-plane animated infinite bounce delay-1s"></i>Travel Genic</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#uts">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link animated slideInDown" href="#uts">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link animated slideInDown" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#trip">Trips</a>
+        <a class="nav-link animated slideInDown" href="#trip">Trips</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#gallery">gallery</a>
+        <a class="nav-link animated slideInDown" href="#gallery">gallery</a>
       </li>
-      <li class="nav-item">
-      <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-      </li>
-      <div id="id01" class="modal">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post" >
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img/img_avatar.png" alt="Avatar" class="avatar">
-          </div>
+     
       
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-              
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw"> <a href="#">Signup</a></span>
-          </div>
-        </form>
-      </div>
-    </ul>
-  </div>
+         
 
   
 </nav>
@@ -83,13 +57,13 @@
   
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active animated tada">
       <img src="img/img1.jpg"  height="600">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item animated pulse">
       <img src="img/img2.jpg" height="600" >
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item animated pulse">
       <img src="img/img3.jpg"  height="600">
     </div>
   </div>
@@ -103,11 +77,11 @@
   </a>
 </div>
  <section class="text-center about" id="about">
-      <h1>About US</h1>
+      <h1 class="animated bounceInUp delay-1s">About US</h1>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200" >
-            <span class="fa fa-group"></span>
+            <span class="fa fa-group "></span>
             <h2>Team Bootstrap</h2>
             <p class="lead">We are team of 5 people that consist of 4 guys and 1 girl</p>
           </div>
@@ -127,41 +101,44 @@
         
       </div>
     </section>
-    <div class="py-5 bg-light">
+    
+    
 <h1 id="trip" style="text-align: center;">Trips</h1>
     <div class="container">
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
- <img src="img/vio.jpg" class="card-img-top" alt="..." height="256px">
- <div class="card-body">
-   <button type="button" class="btn btn-primary">Pantai Vio Vio</button>
- </div>
-</div>
-        </div>
+            <div class="row">
+              <div class="col-md-4 animateMe" data-animation="fadeInUpBig">
+                <div class="card" style="width: 18rem;">
+                  <img src="img/vio.jpg" class="card-img-top" alt="..." height="256px">
+                       <div class="card-body">
+                     <button type="button" class="btn btn-primary animated infinite pulse">Pantai Vio Vio</button>
+            </div>
+              </div>
+                </div>
 
-        <div class="col-md-4">
+
+        <div class="col-md-4 animateMe" data-animation="fadeInUpBig">
           <div class="card" style="width: 18rem;">
  <img src="img/air.jpg" class="card-img-top" alt="..." height="256px">
  <div class="card-body">
-   <button type="button" class="btn btn-primary">Air Terjun Telaga Bidadari</button>
+   <button type="button" class="btn btn-primary animated infinite pulse">Air Terjun Telaga Bidadari</button>
  </div>
 </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
- <img src="img/mata.jpg" class="card-img-top" alt="..." height="256px">
- <div class="card-body">
-   <button type="button" class="btn btn-primary">Hutan Mata Kucing</button>
- </div>
-</div>
-        </div>
+              <div class="col-md-4 animateMe" data-animation="fadeInUpBig">
+                <div class="card" style="width: 18rem;">
+                  <img src="img/mata.jpg" class="card-img-top" alt="..." height="256px">
+                       <div class="card-body">
+                     <button type="button" class="btn btn-primary animated infinite pulse">Hutan mata kucing</button>
+            </div>
+              </div>
+                </div>
+              
       
       </div>
-    </div>
-  </div>
+   
+  
 <h5 id="gallery" style="text-align: center;">Gallery</h5>
 <div class="container">
   <div class="row">

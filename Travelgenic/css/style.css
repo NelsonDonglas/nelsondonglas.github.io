@@ -1,4 +1,43 @@
 
+
+* {
+  font-family: sans-serif;
+}
+
+.texto {margin: 5px 30px;}
+
+.center {
+  width:100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: grey;
+  padding: 100px 0;
+    border-radius: 15px;
+}
+
+.animateMe {
+ width: 250px;
+ position: relative;
+ min-height: 250px;
+ margin: 120px auto;
+ display:block;
+}
+
+/*.animateMe:nth-child(even) {
+ background-color: white;
+}
+*/
+
+
+/* Copy the CSS below to your project */
+
+/*.animateMe{
+  opacity: 0;
+}
+ 
+.animateMe .animated{
+    opacity: 1;
+}*/
 .about{
 	cursor: pointer;
 	background-color: #6B062D;
